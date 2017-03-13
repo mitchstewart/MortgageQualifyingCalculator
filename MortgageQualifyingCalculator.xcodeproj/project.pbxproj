@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2B265C651E595AFC002FE83B /* MSBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B265C641E595AFC002FE83B /* MSBarButtonItem.swift */; };
+		2B3131091E7626D8007832FB /* CalculatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3131081E7626D8007832FB /* CalculatorService.swift */; };
+		2B31310B1E7653A3007832FB /* MSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31310A1E7653A3007832FB /* MSLabel.swift */; };
 		2B58A1811E355D5000CD65DF /* SidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B58A1801E355D5000CD65DF /* SidePanelViewController.swift */; };
 		2B58A1831E355F6400CD65DF /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B58A1821E355F6400CD65DF /* MenuItem.swift */; };
 		2B58A1851E356D0200CD65DF /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B58A1841E356D0200CD65DF /* ContainerViewController.swift */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		2B265C641E595AFC002FE83B /* MSBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBarButtonItem.swift; sourceTree = "<group>"; };
+		2B3131081E7626D8007832FB /* CalculatorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorService.swift; sourceTree = "<group>"; };
+		2B31310A1E7653A3007832FB /* MSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSLabel.swift; sourceTree = "<group>"; };
 		2B58A1801E355D5000CD65DF /* SidePanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePanelViewController.swift; sourceTree = "<group>"; };
 		2B58A1821E355F6400CD65DF /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		2B58A1841E356D0200CD65DF /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B3131071E762639007832FB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2B3131081E7626D8007832FB /* CalculatorService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		2B58A1881E3573B700CD65DF /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +93,7 @@
 				2BE18E8A1E3E6B58002EA85B /* DoneCancelNumberPadToolbar.swift */,
 				2BEA9AAE1E2C507800A91595 /* Views */,
 				2B58A1881E3573B700CD65DF /* Models */,
+				2B3131071E762639007832FB /* Services */,
 				2BEA9AA91E2C0F9400A91595 /* Supporting Files */,
 			);
 			path = MortgageQualifyingCalculator;
@@ -102,6 +115,7 @@
 			children = (
 				2BB470DF1E3F011900765553 /* MSTextField.swift */,
 				2B265C641E595AFC002FE83B /* MSBarButtonItem.swift */,
+				2B31310A1E7653A3007832FB /* MSLabel.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -185,8 +199,10 @@
 				2B58A1831E355F6400CD65DF /* MenuItem.swift in Sources */,
 				2B58A1851E356D0200CD65DF /* ContainerViewController.swift in Sources */,
 				2BE18E8B1E3E6B58002EA85B /* DoneCancelNumberPadToolbar.swift in Sources */,
+				2B31310B1E7653A3007832FB /* MSLabel.swift in Sources */,
 				2BEA9A981E2C0F6800A91595 /* AppDelegate.swift in Sources */,
 				2B58A1871E356DF900CD65DF /* CenterViewController.swift in Sources */,
+				2B3131091E7626D8007832FB /* CalculatorService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

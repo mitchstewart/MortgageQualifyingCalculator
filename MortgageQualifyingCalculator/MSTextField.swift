@@ -15,10 +15,14 @@ class MSTextField: UITextField {
     var borderColor: UIColor = UIColor.black { didSet { setNeedsDisplay() } }
     @IBInspectable
     var borderWidth: CGFloat = 1 { didSet { setNeedsDisplay() } }
+    var input: Double {
+        get {
+            return 9.99
+        }
+    }
 
     override func draw(_ rect: CGRect) {
         layer.borderColor = borderColor.cgColor
         layer.borderWidth = borderWidth
     }
-
 }

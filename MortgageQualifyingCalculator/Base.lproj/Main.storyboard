@@ -118,7 +118,7 @@
                                                     <constraint firstAttribute="height" constant="1" id="S0A-Ld-46N"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$400,123" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYc-4G-9Cz">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$400,123" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYc-4G-9Cz" customClass="MSLabel" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="233" y="125" width="118" height="34"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
                                                 <color key="textColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
@@ -225,7 +225,7 @@
                                                     <constraint firstAttribute="height" constant="1" id="lFM-VH-G2T"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10,300,123" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGc-UR-MOR">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10,300,123" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGc-UR-MOR" customClass="MSLabel" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="148" y="73" width="197" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="197" id="ObX-gU-Hf1"/>
@@ -335,7 +335,7 @@
                                                     <constraint firstAttribute="height" constant="1" id="Wx3-OO-toa"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$300,123" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwV-3B-gxu">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$300,123" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwV-3B-gxu" customClass="MSLabel" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="209" y="178" width="143" height="35"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
                                                 <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -437,7 +437,7 @@
                                                     <constraint firstAttribute="height" constant="1" id="ORu-kV-5ps"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$300,123" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVl-6v-lnG">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$300,123" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVl-6v-lnG" customClass="MSLabel" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="210" y="40" width="142" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="142" id="PfU-f8-upe"/>
@@ -520,7 +520,7 @@
                                                 <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$300,123" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFp-Ns-y9K">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$300,123" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFp-Ns-y9K" customClass="MSLabel" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="210" y="123" width="142" height="35"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
                                                 <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -648,16 +648,20 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="900"/>
                     <connections>
-                        <outlet property="CCPaymentsTextField" destination="UHP-iV-uJS" id="R3D-TE-gGx"/>
-                        <outlet property="CarLoansTextField" destination="hOa-7A-kFV" id="Qa6-EP-h3f"/>
-                        <outlet property="DTITextField" destination="9OK-D8-XMf" id="zuH-gb-bjN"/>
-                        <outlet property="InterestRateTextField" destination="D7B-tI-ByK" id="4uS-Vq-QKw"/>
-                        <outlet property="LoanToValueTextField" destination="f4f-4k-usN" id="lph-qz-JPA"/>
-                        <outlet property="MonthlyGrossIncomeTextField" destination="SEr-Ar-ICU" id="OqP-KA-B2S"/>
-                        <outlet property="StudentLoansTextField" destination="53Z-bw-c4n" id="CUB-2a-rbt"/>
-                        <outlet property="TermTextField" destination="33Z-Qu-RGn" id="vY9-5T-Ft8"/>
-                        <outlet property="purchasePriceView" destination="EdJ-nh-5za" id="h72-dT-myi"/>
-                        <outlet property="scrollView" destination="hYG-Ol-RAL" id="izv-lH-Ecq"/>
+                        <outlet property="carLoansTextField" destination="hOa-7A-kFV" id="mva-EE-IVj"/>
+                        <outlet property="ccPaymentsTextField" destination="UHP-iV-uJS" id="Qee-IX-PIZ"/>
+                        <outlet property="dtiTextField" destination="9OK-D8-XMf" id="7me-nx-qhZ"/>
+                        <outlet property="housingAndDebtsLabel" destination="fYc-4G-9Cz" id="tzH-aK-ciC"/>
+                        <outlet property="interestRateTextField" destination="D7B-tI-ByK" id="Iji-A4-A7z"/>
+                        <outlet property="loanAmountLabel" destination="NFp-Ns-y9K" id="TGp-a9-JrO"/>
+                        <outlet property="loanToValueTextField" destination="f4f-4k-usN" id="bDW-Tt-eE1"/>
+                        <outlet property="maxPITIAndMILabel" destination="PwV-3B-gxu" id="jC6-Uo-H3z"/>
+                        <outlet property="monthlyGrossIncomeTextField" destination="SEr-Ar-ICU" id="t62-au-bhn"/>
+                        <outlet property="principleAndInterestLabel" destination="FVl-6v-lnG" id="jfR-oT-v9K"/>
+                        <outlet property="purchasePriceLabel" destination="BGc-UR-MOR" id="7hB-ht-lSf"/>
+                        <outlet property="scrollView" destination="hYG-Ol-RAL" id="hbD-0l-rZT"/>
+                        <outlet property="studentLoansTextField" destination="53Z-bw-c4n" id="Ak8-Ed-Srj"/>
+                        <outlet property="termTextField" destination="33Z-Qu-RGn" id="lIp-lb-kBb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fMk-y7-99B" userLabel="First Responder" sceneMemberID="firstResponder"/>
