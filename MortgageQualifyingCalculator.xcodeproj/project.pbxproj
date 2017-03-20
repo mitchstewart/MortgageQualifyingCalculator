@@ -62,6 +62,16 @@
 			name = Calculators;
 			sourceTree = "<group>";
 		};
+		2B39CA311E7F7422000B2FF1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B58A1861E356DF900CD65DF /* CenterViewController.swift */,
+				2B58A1841E356D0200CD65DF /* ContainerViewController.swift */,
+				2B58A1801E355D5000CD65DF /* SidePanelViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		2B58A1881E3573B700CD65DF /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,11 +99,8 @@
 		2BEA9A961E2C0F6800A91595 /* MortgageQualifyingCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				2B58A1861E356DF900CD65DF /* CenterViewController.swift */,
-				2B58A1841E356D0200CD65DF /* ContainerViewController.swift */,
-				2B58A1801E355D5000CD65DF /* SidePanelViewController.swift */,
 				2BEA9A9B1E2C0F6800A91595 /* Main.storyboard */,
-				2BE18E8A1E3E6B58002EA85B /* DoneCancelNumberPadToolbar.swift */,
+				2B39CA311E7F7422000B2FF1 /* Controllers */,
 				2BEA9AAE1E2C507800A91595 /* Views */,
 				2B58A1881E3573B700CD65DF /* Models */,
 				2B3131071E762639007832FB /* Calculators */,
@@ -116,6 +123,7 @@
 		2BEA9AAE1E2C507800A91595 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2BE18E8A1E3E6B58002EA85B /* DoneCancelNumberPadToolbar.swift */,
 				2BB470DF1E3F011900765553 /* MSTextField.swift */,
 				2B265C641E595AFC002FE83B /* MSBarButtonItem.swift */,
 				2B31310A1E7653A3007832FB /* MSLabel.swift */,
