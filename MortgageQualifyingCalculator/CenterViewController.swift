@@ -42,9 +42,9 @@ class CenterViewController: UIViewController {
     var fullContentInset: UIEdgeInsets!
     var scrollIndicatorInset: UIEdgeInsets!
     var toolbar: DoneCancelNumberPadToolbar!
-    var calculationInputFields = [CalculationInput: MSTextField]()
-    var calculationOutputLabels = [CalculationOutput: MSLabel]()
-    let service = CalculatorService()
+    var calculationInputFields = [PurchasePriceInput: MSTextField]()
+    var calculationOutputLabels = [PurchasePriceOutput: MSLabel]()
+    let calculator = MortgageCalculator()
     
     override func viewDidLoad() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWasShown), name: NSNotification.Name.UIKeyboardDidShow, object: nil)
@@ -68,7 +68,7 @@ class CenterViewController: UIViewController {
         calculationInputFields.forEach {
             $0.value.delegate = self
             $0.value.inputAccessoryView = DoneCancelNumberPadToolbar().initWith(textField: $0.value, withPadDelegate: self)
-            $0.value.addTarget(self, action: #selector(inputChanged), for: .editingChanged)
+            $0.value.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         }
         
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 59.0 / 255.0, green: 89.0 / 255.0, blue: 152.0 / 255.0, alpha: 1.0)
@@ -82,15 +82,15 @@ class CenterViewController: UIViewController {
     
     // MARK: Text Field Targets
     
-    @objc private func inputChanged() {
-        let inputs = calculationInputFields.map { (key, value) in (key, value.input) }
-        let outputs = service.calculate(calculationInputs: inputs)
+    @objc private func textFieldDidChange(textField: MSTextField) {
+        let outputs = calculator.calculatePurchasePrice(calculationInputs: calculationInputFields.map { (key, value) in (key, value.input) })
         update(calculation: outputs)
+        if(textField.text!.characters.count > textField.maxLength) { textField.deleteBackward() }
     }
     
     // MARK: Private Methods
     
-    private func update(calculation outputs: [CalculationOutput: Double]) {
+    private func update(calculation outputs: [PurchasePriceOutput: Double]) {
         calculationOutputLabels[.housingAndDebts]?.value = outputs[.housingAndDebts]!
         calculationOutputLabels[.maxPITIAndMI]?.value = outputs[.maxPITIAndMI]!
         calculationOutputLabels[.principleAndInterest]?.value = outputs[.principleAndInterest]!
@@ -121,7 +121,7 @@ extension CenterViewController: UITextFieldDelegate {
         let kbSize = (info?[UIKeyboardFrameBeginUserInfoKey] as! CGRect).size
         
         let rect = CGRect(x: view.frame.minX,
-                          y: view.frame.minY,
+                          y: view.frame.minY + scrollView.contentOffset.y,
                           width: UIScreen.main.bounds.width,
                           height: UIScreen.main.bounds.height - kbSize.height + scrollView.contentInset.bottom)
         
@@ -129,10 +129,7 @@ extension CenterViewController: UITextFieldDelegate {
                                  y: (firstResponderTextField.superview?.frame.origin.y)! + firstResponderTextField.frame.origin.y)
         
         if(!rect.contains(checkPoint)) {
-            let contentInsets = UIEdgeInsets(top: 0.0,
-                                             left: 0.0,
-                                             bottom: kbSize.height,
-                                             right: 0.0)
+            let contentInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: kbSize.height, right: 0.0)
             
             scrollView.contentInset = contentInsets
             scrollView.scrollIndicatorInsets = contentInsets
@@ -145,7 +142,6 @@ extension CenterViewController: UITextFieldDelegate {
         scrollView.contentInset = fullContentInset
         scrollView.scrollIndicatorInsets = scrollIndicatorInset
     }
-    
 }
 
 extension CenterViewController: DoneCancelNumberPadToolbarDelegate {
@@ -179,4 +175,3 @@ extension Dictionary {
         return result
     }
 }
-

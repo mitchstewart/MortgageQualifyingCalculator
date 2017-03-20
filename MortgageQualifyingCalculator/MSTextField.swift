@@ -13,16 +13,34 @@ class MSTextField: UITextField {
     
     @IBInspectable
     var borderColor: UIColor = UIColor.black { didSet { setNeedsDisplay() } }
+    
     @IBInspectable
     var borderWidth: CGFloat = 1 { didSet { setNeedsDisplay() } }
+    
+    @IBInspectable
+    var maxLength: Int = 6 { didSet { setNeedsDisplay() } }
+    
+    @IBInspectable
+    var isPercent: Bool = false { didSet { setNeedsDisplay() } }
+    
     var input: Double {
         get {
-            return 9.99
+            if let input = Double(text!)  {
+                return !isPercent ? input : input / 100
+            } else {
+                return 0.00
+            }
         }
     }
-
+    
     override func draw(_ rect: CGRect) {
         layer.borderColor = borderColor.cgColor
         layer.borderWidth = borderWidth
+    }
+}
+
+extension String {
+    var isNumeric: Bool {
+        return !isEmpty && range(of: "[0-9]", options: .regularExpression) == nil
     }
 }

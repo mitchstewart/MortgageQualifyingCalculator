@@ -42,8 +42,8 @@ class ContainerViewController: UIViewController {
         centerNavigationController.didMove(toParentViewController: self)
         
         // TODO: Fix the panning with scrollview
-//        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture))
-//        centerViewController.view.addGestureRecognizer(panGestureRecognizer)
+        //let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture))
+        //centerViewController.view.addGestureRecognizer(panGestureRecognizer)
     }
 }
 

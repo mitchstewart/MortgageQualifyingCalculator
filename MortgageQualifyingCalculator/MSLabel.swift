@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class MSLabel: UILabel {
     
@@ -15,7 +16,10 @@ class MSLabel: UILabel {
             return Double(text!)!
         }
         set {
-           text = String(newValue)
+            let formatter = NumberFormatter()
+            formatter.locale = Locale(identifier: "en_US")
+            formatter.numberStyle = NumberFormatter.Style.currency
+            text = formatter.string(from: NSNumber(value: newValue))
         }
     }
 }
