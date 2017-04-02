@@ -20,16 +20,16 @@ class MSTextField: UITextField {
     @IBInspectable
     var maxLength: Int = 6 { didSet { setNeedsDisplay() } }
     
-    @IBInspectable
-    var isPercent: Bool = false { didSet { setNeedsDisplay() } }
-    
     var input: Double {
         get {
             if let input = Double(text!)  {
-                return !isPercent ? input : input / 100
+                return input
             } else {
                 return 0.00
             }
+        }
+        set {
+            text = String(newValue)
         }
     }
     

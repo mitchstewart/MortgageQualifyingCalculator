@@ -7,8 +7,8 @@
 //
 
 import UIKit
+import CoreData
 
-//@objc
 protocol SidePanelViewControllerDelegate {
     func menuItemSelected(_ menuItem: MenuItem)
 }
@@ -30,16 +30,12 @@ class SidePanelViewController: UIViewController {
         super.viewDidLoad()
 
         tableView.reloadData()
-    }
+    }    
 }
 
 // MARK: Table View Data Source
 
 extension SidePanelViewController: UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return menuItems.count

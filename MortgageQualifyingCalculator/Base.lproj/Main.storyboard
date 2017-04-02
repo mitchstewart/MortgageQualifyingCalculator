@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2gC-To-Wo9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2gC-To-Wo9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -90,11 +91,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Xez-nl-Mri"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KrR-Eg-tgW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="825"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYG-Ol-RAL">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="825"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6QX-FL-vkr">
                                         <rect key="frame" x="8" y="20" width="360" height="179"/>
@@ -159,8 +160,6 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="offsetLeft" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isPercent" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DTI:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4D-ow-sKE">
@@ -220,7 +219,6 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isPercent" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7YF-qB-aGR">
@@ -500,7 +498,6 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isPercent" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="33Z-Qu-RGn" customClass="MSTextField" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
@@ -599,22 +596,11 @@
                                             <constraint firstItem="Yqr-b2-OYI" firstAttribute="centerY" secondItem="33Z-Qu-RGn" secondAttribute="centerY" id="txI-tc-PnQ"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzy-3M-rZZ">
-                                        <rect key="frame" x="138" y="821" width="100" height="40"/>
-                                        <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="HTD-yB-mP0"/>
-                                            <constraint firstAttribute="width" constant="100" id="kcQ-xg-uJG"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="28"/>
-                                        <state key="normal" title="Save">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="WDm-p4-SOc" firstAttribute="trailing" secondItem="J7C-Xz-axq" secondAttribute="trailing" id="17o-R7-wrZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="EdJ-nh-5za" secondAttribute="bottom" constant="12" id="42l-Nh-rqP"/>
                                     <constraint firstItem="EdJ-nh-5za" firstAttribute="trailing" secondItem="hYG-Ol-RAL" secondAttribute="trailingMargin" id="E8i-EC-D6M"/>
                                     <constraint firstItem="EdJ-nh-5za" firstAttribute="top" secondItem="tiE-M3-32Z" secondAttribute="bottom" constant="8" symbolic="YES" id="FDQ-Er-SY0"/>
                                     <constraint firstItem="tiE-M3-32Z" firstAttribute="top" secondItem="J7C-Xz-axq" secondAttribute="bottom" constant="8" symbolic="YES" id="KKr-Tn-XYd"/>
@@ -626,10 +612,7 @@
                                     <constraint firstItem="6QX-FL-vkr" firstAttribute="leading" secondItem="WDm-p4-SOc" secondAttribute="leading" id="WE8-xo-Tp3"/>
                                     <constraint firstItem="WDm-p4-SOc" firstAttribute="top" secondItem="6QX-FL-vkr" secondAttribute="bottom" constant="8" symbolic="YES" id="Xe6-Pi-4ky"/>
                                     <constraint firstItem="WDm-p4-SOc" firstAttribute="leading" secondItem="J7C-Xz-axq" secondAttribute="leading" id="ZlR-Cu-qYk"/>
-                                    <constraint firstAttribute="bottom" secondItem="yzy-3M-rZZ" secondAttribute="bottom" constant="39" id="b6g-cj-F4y"/>
-                                    <constraint firstItem="EdJ-nh-5za" firstAttribute="centerX" secondItem="yzy-3M-rZZ" secondAttribute="centerX" id="e31-kv-3oI"/>
                                     <constraint firstItem="6QX-FL-vkr" firstAttribute="leading" secondItem="hYG-Ol-RAL" secondAttribute="leadingMargin" id="fSx-5f-4iU"/>
-                                    <constraint firstItem="yzy-3M-rZZ" firstAttribute="top" secondItem="EdJ-nh-5za" secondAttribute="bottom" constant="8" symbolic="YES" id="k3m-q1-PlF"/>
                                     <constraint firstItem="6QX-FL-vkr" firstAttribute="top" secondItem="hYG-Ol-RAL" secondAttribute="top" constant="20" id="tmV-nX-8Cu"/>
                                     <constraint firstItem="J7C-Xz-axq" firstAttribute="leading" secondItem="tiE-M3-32Z" secondAttribute="leading" id="wo1-EU-r2y"/>
                                     <constraint firstItem="tiE-M3-32Z" firstAttribute="leading" secondItem="EdJ-nh-5za" secondAttribute="leading" id="zv5-yl-u89"/>
@@ -650,9 +633,23 @@
                                 <action selector="menuTapped:" destination="2gC-To-Wo9" id="c9H-bw-Wsp"/>
                             </connections>
                         </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="jrE-wd-zSo">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="touchedAddButton:" destination="2gC-To-Wo9" id="3Ae-N4-Csm"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="trash" id="zxg-jO-bVA">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="touchedDeleteButton:" destination="2gC-To-Wo9" id="3y5-j9-5BW"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="900"/>
+                    <size key="freeformSize" width="375" height="825"/>
                     <connections>
                         <outlet property="carLoansTextField" destination="hOa-7A-kFV" id="mva-EE-IVj"/>
                         <outlet property="ccPaymentsTextField" destination="UHP-iV-uJS" id="Qee-IX-PIZ"/>

@@ -11,15 +11,10 @@ import Foundation
 class MenuItem {
     
     let title: String
+    let mortgageCalculation: MortgageCalculation
     
-    init(title: String) {
-        self.title = title
-    }
-    
-    class func allMenuItems() -> Array<MenuItem> {
-        return
-            [
-                MenuItem(title: "Saved Calculations")
-            ]
+    init(mortgageCalculation: MortgageCalculation) {
+        self.title = mortgageCalculation.name!
+        self.mortgageCalculation = mortgageCalculation
     }
 }

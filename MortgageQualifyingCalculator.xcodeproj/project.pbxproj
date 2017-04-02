@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B2155D31E82167B00DC543D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2B2155D11E82167B00DC543D /* Model.xcdatamodeld */; };
 		2B265C651E595AFC002FE83B /* MSBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B265C641E595AFC002FE83B /* MSBarButtonItem.swift */; };
 		2B3131091E7626D8007832FB /* MortgageCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3131081E7626D8007832FB /* MortgageCalculator.swift */; };
 		2B31310B1E7653A3007832FB /* MSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31310A1E7653A3007832FB /* MSLabel.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B2155D21E82167B00DC543D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		2B265C641E595AFC002FE83B /* MSBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBarButtonItem.swift; sourceTree = "<group>"; };
 		2B3131081E7626D8007832FB /* MortgageCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MortgageCalculator.swift; sourceTree = "<group>"; };
 		2B31310A1E7653A3007832FB /* MSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSLabel.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				2BEA9A9B1E2C0F6800A91595 /* Main.storyboard */,
+				2B2155D11E82167B00DC543D /* Model.xcdatamodeld */,
 				2B39CA311E7F7422000B2FF1 /* Controllers */,
 				2BEA9AAE1E2C507800A91595 /* Views */,
 				2B58A1881E3573B700CD65DF /* Models */,
@@ -215,6 +218,7 @@
 				2BEA9A981E2C0F6800A91595 /* AppDelegate.swift in Sources */,
 				2B58A1871E356DF900CD65DF /* CenterViewController.swift in Sources */,
 				2B3131091E7626D8007832FB /* MortgageCalculator.swift in Sources */,
+				2B2155D31E82167B00DC543D /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +385,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2B2155D11E82167B00DC543D /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2B2155D21E82167B00DC543D /* Model.xcdatamodel */,
+			);
+			currentVersion = 2B2155D21E82167B00DC543D /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2BEA9A8C1E2C0F6800A91595 /* Project object */;
 }

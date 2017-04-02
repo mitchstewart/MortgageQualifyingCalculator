@@ -22,7 +22,7 @@ class MortgageCalculator {
         
         if(calculationInputs[.monthlyGrossIncome] == 0.00 || calculationInputs[.dti] == 0.00) { return calculationOutputs }
         
-        calculationOutputs[.housingAndDebts] = calculationInputs[.monthlyGrossIncome]! * calculationInputs[.dti]!
+        calculationOutputs[.housingAndDebts] = calculationInputs[.monthlyGrossIncome]! * calculationInputs[.dti]! / 100
         
         calculationOutputs[.maxPITIAndMI]   = calculationOutputs[.housingAndDebts]
         calculationOutputs[.maxPITIAndMI]! -= (calculationInputs[.carLoans] ?? debtDefault)
@@ -35,11 +35,11 @@ class MortgageCalculator {
         
         let financialCalculator = FinancialCalculator()
         
-        calculationOutputs[.loanAmount] = financialCalculator.calculatePresentValue(interestRate: calculationInputs[.interestRate]!, payment: calculationOutputs[.principleAndInterest]!, term: calculationInputs[.term]!)
+        calculationOutputs[.loanAmount] = financialCalculator.calculatePresentValue(interestRate: calculationInputs[.interestRate]! / 100, payment: calculationOutputs[.principleAndInterest]!, term: calculationInputs[.term]!)
         
         if(calculationInputs[.loanToValue] == 0.00) { return calculationOutputs }
         
-        calculationOutputs[.purchasePrice] = calculationOutputs[.loanAmount]! / calculationInputs[.loanToValue]!
+        calculationOutputs[.purchasePrice] = calculationOutputs[.loanAmount]! / (calculationInputs[.loanToValue]! / 100)
         
         return calculationOutputs
     }

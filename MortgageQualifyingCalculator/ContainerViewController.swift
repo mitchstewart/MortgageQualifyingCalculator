@@ -8,6 +8,7 @@
 
 import UIKit
 import QuartzCore
+import CoreData
 
 enum SlideOutState {
     case bothCollapsed
@@ -30,6 +31,7 @@ class ContainerViewController: UIViewController {
     var rightViewController: SidePanelViewController?
     var viewControllers: [UIViewController]!
     let centerPanelExpandedOffset: CGFloat = 60
+    var model: [NSManagedObject] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,7 +83,24 @@ extension ContainerViewController: CenterViewControllerDelegate {
     func addLeftPanelViewController() {
         if(leftViewController == nil) {
             leftViewController = UIStoryboard.leftViewController()
-            leftViewController!.menuItems = MenuItem.allMenuItems()
+            
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+            
+            let managedContext = appDelegate.persistentContainer.viewContext
+            let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "MortgageCalculation")
+            
+            do {
+                model = try managedContext.fetch(fetchRequest)
+            } catch let error as NSError {
+                print("Could not fetch. \(error), \(error.userInfo)")
+            }
+            
+            var menuItems = [MenuItem]()
+//            model.forEach { menuItems.append(MenuItem(title: $0.value(forKeyPath: "name") as! String, id: $0.value(forKeyPath: "id") as! Int)) }
+            
+            model.forEach { menuItems.append(MenuItem(mortgageCalculation: $0 as! MortgageCalculation)) }
+            
+            leftViewController!.menuItems = menuItems
             
             addChildSidePanelController(sidePanelController: leftViewController!)
         }
@@ -90,7 +109,7 @@ extension ContainerViewController: CenterViewControllerDelegate {
     func addRightPanelViewController() {
         if(rightViewController == nil) {
             rightViewController = UIStoryboard.rightViewController()
-            rightViewController!.menuItems = MenuItem.allMenuItems()
+//            rightViewController!.menuItems = MenuItem.allMenuItems()
             
             addChildSidePanelController(sidePanelController: rightViewController!)
         }
