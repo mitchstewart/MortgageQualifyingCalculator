@@ -36,7 +36,7 @@
 		2B66B8461E78DEF50036DBFA /* FinancialCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialCalculator.swift; sourceTree = "<group>"; };
 		2BB470DF1E3F011900765553 /* MSTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTextField.swift; sourceTree = "<group>"; };
 		2BE18E8A1E3E6B58002EA85B /* DoneCancelNumberPadToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneCancelNumberPadToolbar.swift; sourceTree = "<group>"; };
-		2BEA9A941E2C0F6800A91595 /* MortgageQualifyingCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MortgageQualifyingCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BEA9A941E2C0F6800A91595 /* Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BEA9A971E2C0F6800A91595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BEA9A9C1E2C0F6800A91595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BEA9A9E1E2C0F6800A91595 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		2BEA9A951E2C0F6800A91595 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2BEA9A941E2C0F6800A91595 /* MortgageQualifyingCalculator.app */,
+				2BEA9A941E2C0F6800A91595 /* Morty.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,7 +151,7 @@
 			);
 			name = MortgageQualifyingCalculator;
 			productName = MortgageQualifyingCalculator;
-			productReference = 2BEA9A941E2C0F6800A91595 /* MortgageQualifyingCalculator.app */;
+			productReference = 2BEA9A941E2C0F6800A91595 /* Morty.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -345,7 +345,7 @@
 				INFOPLIST_FILE = MortgageQualifyingCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.mitchstewart.MortgageQualifyingCalculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Morty;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -358,7 +358,7 @@
 				INFOPLIST_FILE = MortgageQualifyingCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.mitchstewart.MortgageQualifyingCalculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Morty;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

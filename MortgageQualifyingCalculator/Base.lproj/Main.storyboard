@@ -16,7 +16,7 @@
         <!--Left View Controller-->
         <scene sceneID="4jw-ze-VD5">
             <objects>
-                <viewController storyboardIdentifier="LeftViewController" title="Left View Controller" id="1F0-BT-Lbt" customClass="SidePanelViewController" customModule="MortgageQualifyingCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LeftViewController" title="Left View Controller" id="1F0-BT-Lbt" customClass="SidePanelViewController" customModule="Morty" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3lO-JV-gOa"/>
                         <viewControllerLayoutGuide type="bottom" id="G9y-Gn-gz2"/>
@@ -34,7 +34,7 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuItemCell" id="nae-VZ-aR0" customClass="MenuItemCell" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuItemCell" id="nae-VZ-aR0" customClass="MenuItemCell" customModule="Morty" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nae-VZ-aR0" id="5sd-0N-Nre">
@@ -85,7 +85,7 @@
         <!--Center View Controller-->
         <scene sceneID="nCR-C6-TGz">
             <objects>
-                <viewController storyboardIdentifier="CenterViewController" title="Center View Controller" id="2gC-To-Wo9" customClass="CenterViewController" customModule="MortgageQualifyingCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CenterViewController" title="Center View Controller" id="2gC-To-Wo9" customClass="CenterViewController" customModule="Morty" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yfL-bx-i7l"/>
                         <viewControllerLayoutGuide type="bottom" id="Xez-nl-Mri"/>
@@ -100,11 +100,12 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6QX-FL-vkr">
                                         <rect key="frame" x="8" y="20" width="360" height="179"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SEr-Ar-ICU" customClass="MSTextField" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="53" y="8" width="299" height="50"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SEr-Ar-ICU" customClass="MSTextField" customModule="Morty" customModuleProvider="target">
+                                                <rect key="frame" x="53" y="4" width="299" height="50"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="JrB-db-dD5"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="46" id="tDi-Fc-fbi"/>
+                                                    <constraint firstAttribute="height" constant="50" id="uXe-ic-ihT"/>
                                                 </constraints>
                                                 <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
@@ -122,7 +123,7 @@
                                                     <constraint firstAttribute="height" constant="1" id="S0A-Ld-46N"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYc-4G-9Cz" customClass="MSLabel" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYc-4G-9Cz" customClass="MSLabel" customModule="Morty" customModuleProvider="target">
                                                 <rect key="frame" x="185" y="125" width="167" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="167" id="5c7-Hv-WAA"/>
@@ -140,17 +141,7 @@
                                                 <color key="textColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly Gross Income:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZ7-rM-Cy1">
-                                                <rect key="frame" x="58" y="21" width="176" height="24"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="24" id="PO9-ZE-8eH"/>
-                                                    <constraint firstAttribute="width" constant="176" id="dpd-br-4qE"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
-                                                <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9OK-D8-XMf" customClass="MSTextField" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9OK-D8-XMf" customClass="MSTextField" customModule="Morty" customModuleProvider="target">
                                                 <rect key="frame" x="188" y="62" width="164" height="46"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -180,40 +171,50 @@
                                                 <color key="textColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly Gross Income:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZ7-rM-Cy1">
+                                                <rect key="frame" x="60" y="17" width="176" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="PO9-ZE-8eH"/>
+                                                    <constraint firstAttribute="width" constant="176" id="dpd-br-4qE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
+                                                <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="mRv-7k-Sb5" firstAttribute="top" secondItem="SEr-Ar-ICU" secondAttribute="bottom" constant="18" id="AXG-QG-pzk"/>
-                                            <constraint firstItem="SEr-Ar-ICU" firstAttribute="top" secondItem="6QX-FL-vkr" secondAttribute="topMargin" id="AdP-vL-opu"/>
+                                            <constraint firstItem="SEr-Ar-ICU" firstAttribute="leading" secondItem="6QX-FL-vkr" secondAttribute="leading" constant="53" id="AsX-AU-qVg"/>
+                                            <constraint firstItem="SEr-Ar-ICU" firstAttribute="trailing" secondItem="6QX-FL-vkr" secondAttribute="trailingMargin" id="CCQ-d2-fI2"/>
                                             <constraint firstItem="fYc-4G-9Cz" firstAttribute="top" secondItem="H5l-Ed-Evh" secondAttribute="bottom" constant="8" symbolic="YES" id="CqG-ok-VFg"/>
                                             <constraint firstItem="L4D-ow-sKE" firstAttribute="baseline" secondItem="mRv-7k-Sb5" secondAttribute="baseline" id="DCj-GX-MBt"/>
-                                            <constraint firstItem="fYc-4G-9Cz" firstAttribute="trailing" secondItem="9OK-D8-XMf" secondAttribute="trailing" id="H3k-Ze-Jec"/>
-                                            <constraint firstItem="SEr-Ar-ICU" firstAttribute="leading" secondItem="6QX-FL-vkr" secondAttribute="leading" constant="53" id="HW0-q2-fZX"/>
+                                            <constraint firstItem="SEr-Ar-ICU" firstAttribute="top" secondItem="6QX-FL-vkr" secondAttribute="topMargin" constant="-4" id="H82-ep-40N"/>
                                             <constraint firstAttribute="trailing" secondItem="L4D-ow-sKE" secondAttribute="trailing" constant="113" id="Iw9-OO-xXu"/>
-                                            <constraint firstItem="H5l-Ed-Evh" firstAttribute="top" secondItem="9OK-D8-XMf" secondAttribute="bottom" constant="8" symbolic="YES" id="JmN-IZ-Dui"/>
-                                            <constraint firstItem="9OK-D8-XMf" firstAttribute="leading" secondItem="mRv-7k-Sb5" secondAttribute="trailing" constant="3" id="MyK-Ta-zHz"/>
+                                            <constraint firstItem="mRv-7k-Sb5" firstAttribute="top" secondItem="SEr-Ar-ICU" secondAttribute="bottom" constant="22" id="JH2-O0-zmD"/>
                                             <constraint firstItem="bbP-WF-5eS" firstAttribute="leading" secondItem="6QX-FL-vkr" secondAttribute="leadingMargin" id="NA7-cm-JWG"/>
-                                            <constraint firstItem="fYc-4G-9Cz" firstAttribute="trailing" secondItem="SEr-Ar-ICU" secondAttribute="trailing" id="Piw-l1-ouA"/>
-                                            <constraint firstItem="hZ7-rM-Cy1" firstAttribute="leading" secondItem="6QX-FL-vkr" secondAttribute="leading" constant="58" id="RsW-QP-Uan"/>
+                                            <constraint firstItem="hZ7-rM-Cy1" firstAttribute="leading" secondItem="6QX-FL-vkr" secondAttribute="leading" constant="60" id="RsW-QP-Uan"/>
+                                            <constraint firstItem="SEr-Ar-ICU" firstAttribute="centerY" secondItem="hZ7-rM-Cy1" secondAttribute="centerY" id="VL0-bD-jXK"/>
                                             <constraint firstAttribute="height" constant="179" id="VzE-yi-Llv"/>
-                                            <constraint firstItem="9OK-D8-XMf" firstAttribute="top" secondItem="SEr-Ar-ICU" secondAttribute="bottom" constant="4" id="c1R-kB-79V"/>
+                                            <constraint firstItem="9OK-D8-XMf" firstAttribute="trailing" secondItem="fYc-4G-9Cz" secondAttribute="trailing" id="cXD-Ro-1jd"/>
                                             <constraint firstItem="H5l-Ed-Evh" firstAttribute="leading" secondItem="6QX-FL-vkr" secondAttribute="leading" id="eAd-b6-c83"/>
                                             <constraint firstItem="bbP-WF-5eS" firstAttribute="top" secondItem="H5l-Ed-Evh" secondAttribute="bottom" constant="15" id="fIL-vw-L3D"/>
-                                            <constraint firstItem="hZ7-rM-Cy1" firstAttribute="centerY" secondItem="SEr-Ar-ICU" secondAttribute="centerY" id="iC4-g1-9F5"/>
-                                            <constraint firstItem="SEr-Ar-ICU" firstAttribute="trailing" secondItem="6QX-FL-vkr" secondAttribute="trailingMargin" id="kKP-EX-uv4"/>
                                             <constraint firstItem="fYc-4G-9Cz" firstAttribute="centerY" secondItem="bbP-WF-5eS" secondAttribute="centerY" id="kbr-cE-ppK"/>
+                                            <constraint firstItem="SEr-Ar-ICU" firstAttribute="trailing" secondItem="9OK-D8-XMf" secondAttribute="trailing" id="nrF-Jq-VWd"/>
                                             <constraint firstAttribute="bottom" secondItem="fYc-4G-9Cz" secondAttribute="bottom" constant="20" id="pTw-7Z-NWw"/>
                                             <constraint firstItem="L4D-ow-sKE" firstAttribute="leading" secondItem="mRv-7k-Sb5" secondAttribute="trailing" constant="8" symbolic="YES" id="sbJ-WV-1pd"/>
+                                            <constraint firstItem="H5l-Ed-Evh" firstAttribute="top" secondItem="9OK-D8-XMf" secondAttribute="bottom" constant="8" symbolic="YES" id="t61-yl-Lcf"/>
+                                            <constraint firstItem="9OK-D8-XMf" firstAttribute="top" secondItem="SEr-Ar-ICU" secondAttribute="bottom" constant="8" id="uaL-WT-Bs1"/>
                                             <constraint firstAttribute="trailing" secondItem="H5l-Ed-Evh" secondAttribute="trailing" id="uqG-Rv-eJf"/>
+                                            <constraint firstItem="9OK-D8-XMf" firstAttribute="leading" secondItem="mRv-7k-Sb5" secondAttribute="trailing" constant="3" id="wh8-mY-7zU"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EdJ-nh-5za">
-                                        <rect key="frame" x="8" y="700" width="359" height="113"/>
+                                        <rect key="frame" x="8" y="697" width="359" height="113"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f4f-4k-usN" customClass="MSTextField" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f4f-4k-usN" customClass="MSTextField" customModule="Morty" customModuleProvider="target">
                                                 <rect key="frame" x="103" y="8" width="248" height="48"/>
                                                 <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -228,7 +229,7 @@
                                                     <constraint firstAttribute="height" constant="1" id="lFM-VH-G2T"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGc-UR-MOR" customClass="MSLabel" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGc-UR-MOR" customClass="MSLabel" customModule="Morty" customModuleProvider="target">
                                                 <rect key="frame" x="148" y="73" width="197" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="197" id="ObX-gU-Hf1"/>
@@ -290,12 +291,15 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDm-p4-SOc">
-                                        <rect key="frame" x="8" y="207" width="360" height="217"/>
+                                        <rect key="frame" x="8" y="207" width="360" height="214"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hOa-7A-kFV" customClass="MSTextField" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hOa-7A-kFV" customClass="MSTextField" customModule="Morty" customModuleProvider="target">
                                                 <rect key="frame" x="69" y="8" width="283" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="q4v-mg-DAS"/>
+                                                </constraints>
                                                 <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -303,21 +307,13 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UHP-iV-uJS" customClass="MSTextField" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="69" y="115" width="283" height="46"/>
-                                                <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="53Z-bw-c4n" customClass="MSTextField" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="53Z-bw-c4n" customClass="MSTextField" customModule="Morty" customModuleProvider="target">
                                                 <rect key="frame" x="69" y="61" width="283" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="BYE-yi-9EY"/>
+                                                </constraints>
                                                 <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -326,7 +322,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LqB-3n-O96">
-                                                <rect key="frame" x="35" y="127" width="26" height="21"/>
+                                                <rect key="frame" x="35" y="126" width="26" height="22"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -334,11 +330,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WiN-XC-KGZ">
                                                 <rect key="frame" x="0.0" y="169" width="360" height="1"/>
                                                 <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="Wx3-OO-toa"/>
-                                                </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwV-3B-gxu" customClass="MSLabel" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwV-3B-gxu" customClass="MSLabel" customModule="Morty" customModuleProvider="target">
                                                 <rect key="frame" x="209" y="178" width="143" height="35"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
                                                 <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -364,7 +357,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit Card Payments:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dz7-K2-NLv">
-                                                <rect key="frame" x="74" y="128" width="175" height="20"/>
+                                                <rect key="frame" x="74" y="127" width="175" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="8v1-qe-HSR"/>
                                                     <constraint firstAttribute="width" constant="175" id="nv9-Lq-BbS"/>
@@ -383,46 +376,57 @@
                                                 <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UHP-iV-uJS" customClass="MSTextField" customModule="Morty" customModuleProvider="target">
+                                                <rect key="frame" x="69" y="115" width="283" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="qhr-1U-uet"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="PwV-3B-gxu" firstAttribute="top" secondItem="WiN-XC-KGZ" secondAttribute="bottom" constant="8" symbolic="YES" id="0iH-P9-A48"/>
                                             <constraint firstItem="LqB-3n-O96" firstAttribute="centerY" secondItem="Dz7-K2-NLv" secondAttribute="centerY" id="0r1-65-Ao7"/>
-                                            <constraint firstItem="UHP-iV-uJS" firstAttribute="top" secondItem="53Z-bw-c4n" secondAttribute="bottom" constant="8" symbolic="YES" id="1f9-ZE-yBb"/>
                                             <constraint firstItem="nJP-QO-L8n" firstAttribute="leading" secondItem="FPO-Pt-1ov" secondAttribute="leading" id="4xb-QL-g7r"/>
-                                            <constraint firstItem="53Z-bw-c4n" firstAttribute="trailing" secondItem="UHP-iV-uJS" secondAttribute="trailing" id="5dn-QI-vRh"/>
+                                            <constraint firstItem="53Z-bw-c4n" firstAttribute="centerY" secondItem="FPO-Pt-1ov" secondAttribute="centerY" id="5g4-xm-hEj"/>
                                             <constraint firstItem="oqE-eD-EoY" firstAttribute="centerY" secondItem="PwV-3B-gxu" secondAttribute="centerY" id="5vH-B5-1np"/>
-                                            <constraint firstItem="hOa-7A-kFV" firstAttribute="trailing" secondItem="53Z-bw-c4n" secondAttribute="trailing" id="6HO-Hd-Ibj"/>
-                                            <constraint firstItem="hOa-7A-kFV" firstAttribute="leading" secondItem="53Z-bw-c4n" secondAttribute="leading" id="Auw-1p-P24"/>
-                                            <constraint firstAttribute="bottom" secondItem="PwV-3B-gxu" secondAttribute="bottom" constant="4" id="D5e-B0-shD"/>
-                                            <constraint firstItem="LqB-3n-O96" firstAttribute="bottom" secondItem="Dz7-K2-NLv" secondAttribute="bottom" id="EsH-Ax-vd5"/>
+                                            <constraint firstItem="53Z-bw-c4n" firstAttribute="leading" secondItem="hOa-7A-kFV" secondAttribute="leading" id="7en-RF-NvP"/>
+                                            <constraint firstItem="UHP-iV-uJS" firstAttribute="leading" secondItem="53Z-bw-c4n" secondAttribute="leading" id="8lz-PU-FaM"/>
+                                            <constraint firstItem="UHP-iV-uJS" firstAttribute="trailing" secondItem="PwV-3B-gxu" secondAttribute="trailing" id="As1-gS-9f1"/>
                                             <constraint firstItem="Dz7-K2-NLv" firstAttribute="leading" secondItem="LqB-3n-O96" secondAttribute="trailing" constant="13" id="Eyd-kY-vni"/>
+                                            <constraint firstItem="UHP-iV-uJS" firstAttribute="baseline" secondItem="LqB-3n-O96" secondAttribute="firstBaseline" constant="3" id="FlB-xn-f11"/>
                                             <constraint firstItem="WiN-XC-KGZ" firstAttribute="leading" secondItem="WDm-p4-SOc" secondAttribute="leading" id="HAd-Zt-iWY"/>
-                                            <constraint firstItem="hOa-7A-kFV" firstAttribute="top" secondItem="WDm-p4-SOc" secondAttribute="topMargin" id="Kq8-wk-fzh"/>
-                                            <constraint firstItem="UHP-iV-uJS" firstAttribute="centerY" secondItem="Dz7-K2-NLv" secondAttribute="centerY" id="Mlh-dE-o0v"/>
-                                            <constraint firstAttribute="height" constant="217" id="Ocf-Qu-ZS0"/>
-                                            <constraint firstItem="53Z-bw-c4n" firstAttribute="leading" secondItem="UHP-iV-uJS" secondAttribute="leading" id="T4G-rl-36h"/>
-                                            <constraint firstItem="53Z-bw-c4n" firstAttribute="top" secondItem="hOa-7A-kFV" secondAttribute="bottom" constant="7" id="TqP-p2-NPP"/>
-                                            <constraint firstItem="FPO-Pt-1ov" firstAttribute="top" secondItem="hOa-7A-kFV" secondAttribute="bottom" constant="20" id="ULU-CB-kKb"/>
+                                            <constraint firstItem="53Z-bw-c4n" firstAttribute="top" secondItem="hOa-7A-kFV" secondAttribute="bottom" constant="7" id="IHl-eB-ZL4"/>
+                                            <constraint firstItem="UHP-iV-uJS" firstAttribute="leading" secondItem="LqB-3n-O96" secondAttribute="trailing" constant="8" symbolic="YES" id="JoG-kt-M6P"/>
+                                            <constraint firstItem="hOa-7A-kFV" firstAttribute="top" secondItem="WDm-p4-SOc" secondAttribute="topMargin" id="NGT-Jz-HVu"/>
+                                            <constraint firstItem="hOa-7A-kFV" firstAttribute="leading" secondItem="WDm-p4-SOc" secondAttribute="leading" constant="69" id="RYN-c0-HnQ"/>
                                             <constraint firstItem="PwV-3B-gxu" firstAttribute="leading" secondItem="oqE-eD-EoY" secondAttribute="trailing" constant="87" id="VfC-XL-zNv"/>
-                                            <constraint firstItem="53Z-bw-c4n" firstAttribute="top" secondItem="nJP-QO-L8n" secondAttribute="bottom" constant="20" id="Wb6-Kh-2GY"/>
-                                            <constraint firstItem="WiN-XC-KGZ" firstAttribute="top" secondItem="UHP-iV-uJS" secondAttribute="bottom" constant="8" symbolic="YES" id="WpN-9a-uRH"/>
+                                            <constraint firstAttribute="bottom" secondItem="UHP-iV-uJS" secondAttribute="bottom" constant="53" id="VtT-cp-h2x"/>
                                             <constraint firstAttribute="trailing" secondItem="WiN-XC-KGZ" secondAttribute="trailing" id="YXj-NP-ear"/>
                                             <constraint firstItem="LqB-3n-O96" firstAttribute="leading" secondItem="WDm-p4-SOc" secondAttribute="leading" constant="35" id="ZCq-Xk-EnU"/>
                                             <constraint firstItem="WiN-XC-KGZ" firstAttribute="top" secondItem="LqB-3n-O96" secondAttribute="bottom" constant="21" id="c6x-VU-uK9"/>
-                                            <constraint firstItem="UHP-iV-uJS" firstAttribute="trailing" secondItem="PwV-3B-gxu" secondAttribute="trailing" id="cv5-gh-sCU"/>
                                             <constraint firstItem="oqE-eD-EoY" firstAttribute="top" secondItem="WiN-XC-KGZ" secondAttribute="bottom" constant="11" id="dle-4S-B2A"/>
                                             <constraint firstItem="oqE-eD-EoY" firstAttribute="leading" secondItem="WDm-p4-SOc" secondAttribute="leadingMargin" id="gA7-Sh-DAa"/>
-                                            <constraint firstItem="hOa-7A-kFV" firstAttribute="trailing" secondItem="WDm-p4-SOc" secondAttribute="trailingMargin" id="gH2-I9-kUj"/>
+                                            <constraint firstItem="UHP-iV-uJS" firstAttribute="trailing" secondItem="53Z-bw-c4n" secondAttribute="trailing" id="hSZ-so-o0U"/>
+                                            <constraint firstItem="53Z-bw-c4n" firstAttribute="trailing" secondItem="hOa-7A-kFV" secondAttribute="trailing" id="hYK-c6-sTP"/>
                                             <constraint firstItem="FPO-Pt-1ov" firstAttribute="leading" secondItem="Dz7-K2-NLv" secondAttribute="leading" id="iiq-fF-PkA"/>
-                                            <constraint firstItem="hOa-7A-kFV" firstAttribute="centerY" secondItem="nJP-QO-L8n" secondAttribute="centerY" id="nN3-hU-mab"/>
-                                            <constraint firstItem="hOa-7A-kFV" firstAttribute="leading" secondItem="WDm-p4-SOc" secondAttribute="leading" constant="69" id="sey-JI-L2a"/>
-                                            <constraint firstItem="53Z-bw-c4n" firstAttribute="centerY" secondItem="FPO-Pt-1ov" secondAttribute="centerY" id="wty-w8-efW"/>
-                                            <constraint firstItem="UHP-iV-uJS" firstAttribute="leading" secondItem="LqB-3n-O96" secondAttribute="trailing" constant="8" symbolic="YES" id="xGg-pS-W26"/>
+                                            <constraint firstAttribute="bottom" secondItem="PwV-3B-gxu" secondAttribute="bottom" constant="1" id="lRD-7k-iFP"/>
+                                            <constraint firstItem="WiN-XC-KGZ" firstAttribute="top" secondItem="UHP-iV-uJS" secondAttribute="bottom" constant="8" symbolic="YES" id="lVO-Vq-ZAu"/>
+                                            <constraint firstItem="UHP-iV-uJS" firstAttribute="top" secondItem="53Z-bw-c4n" secondAttribute="bottom" constant="8" id="nRn-qz-WjO"/>
+                                            <constraint firstItem="hOa-7A-kFV" firstAttribute="trailing" secondItem="WDm-p4-SOc" secondAttribute="trailingMargin" id="oWC-9u-R3L"/>
+                                            <constraint firstItem="hOa-7A-kFV" firstAttribute="centerY" secondItem="nJP-QO-L8n" secondAttribute="centerY" id="t7P-Ki-R7J"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J7C-Xz-axq">
-                                        <rect key="frame" x="8" y="435" width="360" height="85"/>
+                                        <rect key="frame" x="8" y="432" width="360" height="85"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="70%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BvU-uS-pDQ">
                                                 <rect key="frame" x="309" y="8" width="43" height="21"/>
@@ -440,7 +444,7 @@
                                                     <constraint firstAttribute="height" constant="1" id="ORu-kV-5ps"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVl-6v-lnG" customClass="MSLabel" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVl-6v-lnG" customClass="MSLabel" customModule="Morty" customModuleProvider="target">
                                                 <rect key="frame" x="210" y="40" width="142" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="142" id="PfU-f8-upe"/>
@@ -487,12 +491,12 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tiE-M3-32Z">
-                                        <rect key="frame" x="8" y="528" width="360" height="164"/>
+                                        <rect key="frame" x="8" y="525" width="360" height="164"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D7B-tI-ByK" customClass="MSTextField" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D7B-tI-ByK" customClass="MSTextField" customModule="Morty" customModuleProvider="target">
                                                 <rect key="frame" x="93" y="8" width="259" height="46"/>
                                                 <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="28"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -500,13 +504,13 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="33Z-Qu-RGn" customClass="MSTextField" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="33Z-Qu-RGn" customClass="MSTextField" customModule="Morty" customModuleProvider="target">
                                                 <rect key="frame" x="184" y="62" width="168" height="46"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="168" id="bpQ-Ue-Dj7"/>
                                                 </constraints>
                                                 <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -523,7 +527,7 @@
                                                 <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFp-Ns-y9K" customClass="MSLabel" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFp-Ns-y9K" customClass="MSLabel" customModule="Morty" customModuleProvider="target">
                                                 <rect key="frame" x="210" y="123" width="142" height="35"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
                                                 <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -628,7 +632,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Iow-KP-l0A">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="C8V-NU-yhA" customClass="MSBarButtonItem" customModule="MortgageQualifyingCalculator" customModuleProvider="target">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="C8V-NU-yhA" customClass="MSBarButtonItem" customModule="Morty" customModuleProvider="target">
                             <connections>
                                 <action selector="menuTapped:" destination="2gC-To-Wo9" id="c9H-bw-Wsp"/>
                             </connections>
@@ -669,7 +673,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fMk-y7-99B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2357.5999999999999" y="1318.7406296851575"/>
+            <point key="canvasLocation" x="2357.5999999999999" y="1318.2908545727137"/>
         </scene>
     </scenes>
 </document>

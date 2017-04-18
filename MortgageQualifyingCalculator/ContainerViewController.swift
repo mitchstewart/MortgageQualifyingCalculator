@@ -30,7 +30,7 @@ class ContainerViewController: UIViewController {
     var leftViewController: SidePanelViewController?
     var rightViewController: SidePanelViewController?
     var viewControllers: [UIViewController]!
-    let centerPanelExpandedOffset: CGFloat = 60
+    let centerPanelExpandedOffset: CGFloat = 90
     var model: [NSManagedObject] = []
 
     override func viewDidLoad() {

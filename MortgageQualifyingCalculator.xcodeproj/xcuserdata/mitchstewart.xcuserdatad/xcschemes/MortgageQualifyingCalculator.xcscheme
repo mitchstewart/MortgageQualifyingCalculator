@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2BEA9A931E2C0F6800A91595"
-               BuildableName = "MortgageQualifyingCalculator.app"
+               BuildableName = "Morty.app"
                BlueprintName = "MortgageQualifyingCalculator"
                ReferencedContainer = "container:MortgageQualifyingCalculator.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2BEA9A931E2C0F6800A91595"
-            BuildableName = "MortgageQualifyingCalculator.app"
+            BuildableName = "Morty.app"
             BlueprintName = "MortgageQualifyingCalculator"
             ReferencedContainer = "container:MortgageQualifyingCalculator.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2BEA9A931E2C0F6800A91595"
-            BuildableName = "MortgageQualifyingCalculator.app"
+            BuildableName = "Morty.app"
             BlueprintName = "MortgageQualifyingCalculator"
             ReferencedContainer = "container:MortgageQualifyingCalculator.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2BEA9A931E2C0F6800A91595"
-            BuildableName = "MortgageQualifyingCalculator.app"
+            BuildableName = "Morty.app"
             BlueprintName = "MortgageQualifyingCalculator"
             ReferencedContainer = "container:MortgageQualifyingCalculator.xcodeproj">
          </BuildableReference>
